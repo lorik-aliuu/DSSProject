@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
-option.UseSqlServer(builder.Configuration.GetConnectionString("LorikConnection")));
+option.UseSqlServer(builder.Configuration.GetConnectionString("Altinconnection")));
 
 var app = builder.Build();
 
